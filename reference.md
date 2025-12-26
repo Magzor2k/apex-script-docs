@@ -23,16 +23,18 @@ c: String = 'test'
 ```
 
 ### Primitive Types
+
 | Type | Description | Example |
-|------|-------------|---------|
+|:-----|:------------|:--------|
 | `Int` | Integer | `x = 42` |
 | `Float` | Floating point | `x = 3.14` |
 | `Bool` | Boolean | `x = True` |
 | `String` | Text | `x = 'hello'` |
 
 ### Vector/Matrix Types
+
 | Type | Description | Example |
-|------|-------------|---------|
+|:-----|:------------|:--------|
 | `Vector2` | 2D vector | `v = Vector2(1, 2)` |
 | `Vector3` | 3D vector | `v = Vector3(1, 2, 3)` |
 | `Vector4` | 4D vector | `v = Vector4(1, 2, 3, 4)` |
@@ -40,16 +42,18 @@ c: String = 'test'
 | `Matrix4` | 4x4 transform | `m = Matrix4()` |
 
 ### Array Types
+
 | Type | Description | Example |
-|------|-------------|---------|
+|:-----|:------------|:--------|
 | `IntArray` | Integer array | `a = [1, 2, 3]` |
 | `FloatArray` | Float array | `a = [1.0, 2.0]` |
 | `StringArray` | String array | `a = ['a', 'b']` |
 | `Vector3Array` | Vector3 array | `a = Vector3Array()` |
 
 ### Special Types
+
 | Type | Description |
-|------|-------------|
+|:-----|:------------|
 | `Geometry` | Houdini geometry |
 | `Dict` | Key-value dictionary |
 | `FloatRamp` | Float ramp curve |
@@ -72,8 +76,9 @@ s = String(a)       # Any -> String
 ## Operators
 
 ### Arithmetic
+
 | Operator | Description | Example |
-|----------|-------------|---------|
+|:---------|:------------|:--------|
 | `+` | Addition | `a + b` |
 | `-` | Subtraction | `a - b` |
 | `*` | Multiplication | `a * b` |
@@ -81,8 +86,9 @@ s = String(a)       # Any -> String
 | `**` | Power | `a ** 2` |
 
 ### Comparison
+
 | Operator | Description | Example |
-|----------|-------------|---------|
+|:---------|:------------|:--------|
 | `==` | Equal | `a == b` |
 | `!=` | Not equal | `a != b` |
 | `is` | Identity | `a is b` |
@@ -91,8 +97,9 @@ s = String(a)       # Any -> String
 | `<=`, `>=` | Less/greater or equal | `a <= b` |
 
 ### Logical
+
 | Operator | Description | Example |
-|----------|-------------|---------|
+|:---------|:------------|:--------|
 | `and` | Logical AND | `a and b` |
 | `or` | Logical OR | `a or b` |
 | `not` | Logical NOT | `not a` |
@@ -100,8 +107,9 @@ s = String(a)       # Any -> String
 | `not in` | Not member | `x not in array` |
 
 ### Assignment
+
 | Operator | Description | Example |
-|----------|-------------|---------|
+|:---------|:------------|:--------|
 | `=` | Assign | `a = 5` |
 | `+=` | Add assign | `a += 1` |
 | `-=` | Subtract assign | `a -= 1` |
@@ -348,7 +356,7 @@ BindOutput(geo)
 **IMPORTANT**: When accessing ports in APEX Script, always use the `_in` or `_out` suffix:
 
 | Port Type | Suffix | Example |
-|-----------|--------|---------|
+|:----------|:-------|:--------|
 | Input ports | `_in` | `node.value_in`, `node.geo_in`, `node.r_in` |
 | Output ports | `_out` | `node.value_out`, `node.geo_out`, `node.xform_out` |
 
@@ -385,7 +393,7 @@ spt.geo_out         # Deformed skeleton output
 For the graph to appear on Output 1, configure these parameters:
 
 | Parameter | Value |
-|-----------|-------|
+|:----------|:------|
 | `invocation` | 1 |
 | `bindoutputgeo` | 1 |
 | `apexgeooutput` | `output:geo` |

@@ -255,7 +255,7 @@ Use **View Log** button or Window > Log Viewer to see `print()` output.
 ## Template Mode Differences
 
 | Mode | Purpose | When to Use |
-|------|---------|-------------|
+|:-----|:--------|:------------|
 | Basic (0) | Simple computations | Learning, prototyping |
 | Graph (1) | Build APEX graphs | Creating parameterized tools |
 | Component (2) | Rig components | KineFX rigging workflows |
@@ -295,7 +295,7 @@ This creates an APEX **graph** that describes the processing, but doesn't execut
 For geometry processing in APEX graphs, use these callbacks:
 
 | Callback | Purpose |
-|----------|---------|
+|:---------|:--------|
 | `geo::Transform` | Apply Matrix4 to geometry |
 | `geo::Lattice` | Lattice deformation |
 | `geo::SetPointAttribValuesByName<T>` | Set point attributes |

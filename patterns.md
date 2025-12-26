@@ -19,8 +19,9 @@ BindOutput(geo)
 ```
 
 **Required SOP Settings:**
+
 | Parameter | Value |
-|-----------|-------|
+|:----------|:------|
 | `headertemplate` | 1 (Graph) |
 | `invocation` | 1 |
 | `bindoutputgeo` | 1 |
@@ -35,7 +36,7 @@ BindOutput(geo)
 **IMPORTANT**: When accessing ports in APEX Script, use the `_in` or `_out` suffix:
 
 | Port Type | Suffix | Example |
-|-----------|--------|---------|
+|:----------|:-------|:--------|
 | Input ports | `_in` | `node.geo_in`, `node.r_in`, `node.parent_in` |
 | Output ports | `_out` | `node.geo_out`, `node.xform_out` |
 
@@ -132,7 +133,7 @@ apex_node.parm("apexgeooutput").set("output:geo")
 ### TransformObject Ports
 
 | Port | Access Name | Direction | Type | Purpose |
-|------|-------------|-----------|------|---------|
+|:-----|:------------|:----------|:-----|:--------|
 | `t` | `t_in` | Input | Vector3 | Translation offset |
 | `r` | `r_in` | Input | Vector3 | Euler rotation (degrees) |
 | `s` | `s_in` | Input | Vector3 | Scale |
@@ -175,7 +176,7 @@ spt.geo_out.promoteOutput('Base.skel')
 ### sop::bonedeform Port Names
 
 | Port | Wire To | Type | Description |
-|------|---------|------|-------------|
+|:-----|:--------|:-----|:------------|
 | `geo0` | `geo0_in` | Geometry | Rest mesh (with boneCapture) |
 | `geo1` | `geo1_in` | Geometry | Capture skeleton (rest) |
 | `geo2` | `geo2_in` | Geometry | Animated skeleton |
@@ -304,7 +305,7 @@ BindOutput(geo)
 ### Available Geometry Callbacks
 
 | Callback | Purpose |
-|----------|---------|
+|:---------|:--------|
 | `geo::Transform` | Apply Matrix4 to geometry |
 | `geo::Lattice` | Lattice deformation |
 | `geo::SetPointAttribValuesByName<T>` | Set point attributes |
